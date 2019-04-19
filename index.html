@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/style/style.css" type="text/css" />
+    <title>Giftastic</title>
+  </head>
+  <body>
+    <!-- This is the element that will hold the background of the menu -->
+    <div class="container-fluid text-center background-menu mt-3">
+      <h2 class="mb-5">Gif It Up</h2>
+      <div class="container">
+        <!-- This is the input screen -->
+        <div class="row justify-content-center">
+          <div id="gif-input" class="col-md-6 ">
+            <form>
+              <div class="form-group text-center">
+                <label for="searchInput">What Do You Want To Gif Us</label>
+                <input
+                  type="inputField"
+                  class="form-control"
+                  id="search-input"
+                  placeholder="Gif Me A Break"
+                />
+              </div>
+              <!-- this is the amount of gifs we want -->
+              <div class="form-group text-center">
+                <label for="amount-of-gifs">Gif Me A Number</label>
+                <select class="form-control" id="amount-of-gifs">
+                  <option>5</option>
+                  <option>10</option>
+                  <option>15</option>
+                </select>
+              </div>
+              <div class="form-group text-center">
+                <label for="rating">Gif Me A Rating</label>
+                <select class="form-control" id="rating">
+                  <option>Y</option>
+                  <option>G</option>
+                  <option>PG</option>
+                  <option>PG-13</option>
+                  <option>R</option>
+                </select>
+              </div>
+              <button
+                id="submit-button"
+                type="submit"
+                class="submit btn btn-danger"
+              >
+                Submit
+              </button>
+              <button type="submit" class="submit btn btn-danger clear-button">
+                Clear Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- The buttons will be added here -->
+        <div class="row justify-content-center">
+          <div id="add-gifs" class="col-md-6 "></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is where the gifs get posted -->
+    <div class="container main-body">
+      <div class="row justify-content-center">
+        <div id="gif-showcase" class="col-md-12 justify-content-center"></div>
+      </div>
+    </div>
+    <script src="./assets/javascript/app.js"></script>
+  </body>
+</html>
